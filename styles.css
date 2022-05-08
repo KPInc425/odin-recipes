@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Macondo;
+    src: url(./fonts/Macondo-Regular.ttf);
+}
+
+html {
+    background-color: rgb(245, 245, 245);
+    background-image: url(./img/ArchiveBGPic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Macondo,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    max-width: 80%;
+    margin: auto;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 2px 2px 3px rgb(167, 167, 167);
+    border-radius: 8px;
+    border-left: 6px solid #0369a1;
+    padding: 30px;
+    /* width: 300px; */
+    margin: auto;
+    margin-top: 30px;
+    
+    /* display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr; */
+}
+
+.card > img {
+    display: block;
+    margin: auto;
+    border: 5px solid #0369a1;
+    border-radius: 8px;
+}
+
+li > a {
+    text-decoration: none;
+}
+
+.width300 {
+    width: 300px;
+}
+
+.center {
+    text-align: center;
+}
+
+.card > p, ul, ol {
+    line-height: 1.4;
+    margin: 15px;
+}
+
+ol {
+    margin-left: 30px;
+}
+
+h1 {
+    padding: 10px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+h2 {
+    padding: 15px;
+}
+
+button {
+    border-radius: 14px;
+    border: none;
+    margin: 0 clamp(5px, 10%, 25%);
+    margin-top: 5px;
+    height: 30px;
+    font-family: Macondo,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 700;
+    background-color: #0ea5e9;
+    color: white;
+}
+
+form {
+    display: grid;
+}
