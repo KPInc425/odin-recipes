@@ -71,7 +71,6 @@ h2 {
 button {
     border-radius: 14px;
     border: none;
-    margin: 0 clamp(5px, 10%, 25%);
     margin-top: 5px;
     height: 30px;
     font-family: Macondo,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -80,6 +79,6 @@ button {
     color: white;
 }
 
-form {
+/* form {
     display: grid;
-}
+} */
