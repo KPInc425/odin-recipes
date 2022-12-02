@@ -103,7 +103,7 @@ button {
     padding: 5px;
 }
 
-form {
+.tocForm {
     position: fixed;
     bottom: 25px;
     left: 50%;
