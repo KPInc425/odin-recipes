@@ -3,22 +3,29 @@
     src: url(./fonts/Macondo-Regular.ttf);
 }
 
-html {
+/* html {
     background-color: rgb(245, 245, 245);
     background-image: url(./img/ArchiveBGPic.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Macondo,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+} */
 
 body {
     max-width: 80%;
     margin: auto;
+
+    background-color: rgb(245, 245, 245);
+    background-image: url(./img/ArchiveBGPic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Macondo,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .card {
     background-color: white;
-    box-shadow: 2px 2px 3px rgb(167, 167, 167);
+    box-shadow: 4px 4px 6px rgb(0, 0, 0);
     border-radius: 8px;
     border-left: 6px solid #0369a1;
     padding: 30px;
@@ -28,6 +35,21 @@ body {
     
     /* display: grid;
     grid-template-columns: 4fr 1fr 1fr 1fr; */
+}
+
+.toc {
+    margin-top: 20%;
+    background-color: rgba(219, 219, 219, 0.829);
+    /* border: 5px outset rgb(134, 134, 134); */
+
+    box-shadow: -2px 0px 6px 11px rgba(75,75,75) inset;
+    -webkit-box-shadow: -2px 0px 6px 11px rgb(75, 75, 75) inset;
+    -moz-box-shadow: -2px 0px 6px 11px rgba(75,75,75) inset;
+    border-left: none;
+}
+
+.toc a {
+    font-size: x-large;
 }
 
 .card > img {
@@ -60,7 +82,7 @@ ol {
 
 h1 {
     padding: 10px;
-    font-size: xx-large;
+    font-size: 60px;
     text-align: center;
 }
 
@@ -72,13 +94,52 @@ button {
     border-radius: 14px;
     border: none;
     margin-top: 5px;
-    height: 30px;
+    height: 40px;
+    width: 200px;
     font-family: Macondo,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 700;
     background-color: #0ea5e9;
     color: white;
+    font-size: 110%;
+    padding: 5px;
 }
 
-/* form {
-    display: grid;
-} */
+@media screen and (max-width: 700px) {
+    .card .toc {
+        /* width: 0vw; */
+        background-color: red;
+    }
+
+    body {
+        max-width: 85vw;
+        margin: 0 0 0 10%;
+        /* border: 10px solid green; */
+    }
+    
+    .toc a {
+        font-size: 80%;
+    }
+
+    .toc h1 {
+        font-size: 30px;
+    }
+
+    .toc button {
+        font-size: 80%;
+        width: 80%;
+    }
+
+    .card button {
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    .card img {
+        width: 80%;
+        height: auto;
+    }
+
+    .card h1 {
+        font-size: 175%;
+    }
+}
